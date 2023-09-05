@@ -1,8 +1,6 @@
 package ru.mirea.lab2.task4;
 
 
-import com.sun.source.tree.BreakTree;
-
 public class Shop {
     private final int capacity = 10;
     private int length = 0;

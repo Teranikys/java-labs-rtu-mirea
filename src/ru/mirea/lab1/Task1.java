@@ -6,7 +6,7 @@ public class Task1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        final int N = 10;
+        int N = sc.nextInt();
         int[] a = new int[N];
 
         for (int i = 0; i < N; i++) {

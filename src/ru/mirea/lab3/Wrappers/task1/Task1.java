@@ -15,16 +15,15 @@ public class Task1 {
         System.out.println(a);
         //3
         Double val = 3.14;
-        int valInt = Integer.parseInt(String.valueOf(val));
+        int valInt = Integer.parseInt(String.valueOf(Math.round(val)));
         double valDouble = val;
         float valFloat = Float.parseFloat(String.valueOf(val));
-        byte valByte = Byte.parseByte(String.valueOf(val));
-        long valLong = Long.parseLong(String.valueOf(val));
-        short valShort = Short.parseShort(String.valueOf(val));
+        byte valByte = Byte.parseByte(String.valueOf(Math.round(val)));
+        long valLong = Long.parseLong(String.valueOf(Math.round(val)));
+        short valShort = Short.parseShort(String.valueOf(Math.round(val)));
         //4
         System.out.println(val);
         //5
         String d = Double.toString(3.14);
-
     }
 }
