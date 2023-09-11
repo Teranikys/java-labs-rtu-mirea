@@ -1,14 +1,16 @@
 package ru.mirea.lab4_1.task8;
 
+import java.awt.*;
+
 public class Square extends Rectangle{
-    public Square(String color, boolean filled, double side) {
+    public Square(Color color, boolean filled, int side) {
         super(color, filled, side, side);
     }
 
     public Square() {
     }
 
-    public Square(double side) {
+    public Square(int side) {
         super(side, side);
     }
 
@@ -16,18 +18,18 @@ public class Square extends Rectangle{
         return this.width;
     }
 
-    public void setSide(double side) {
+    public void setSide(int side) {
         this.width = side;
         this.length = side;
     }
 
     @Override
-    public void setWidth(double width) {
+    public void setWidth(int width) {
         super.setWidth(width);
     }
 
     @Override
-    public void setLength(double length) {
+    public void setLength(int length) {
         super.setLength(length);
     }
 

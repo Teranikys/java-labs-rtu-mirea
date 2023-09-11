@@ -1,26 +1,32 @@
 package ru.mirea.lab4_1.task8;
 
+import java.awt.*;
+
 public class Circle extends Shape{
-    protected double radius;
+    protected int radius;
+
+    public Circle() {
+    }
+
     @Override
     public double getArea() {
         return Math.PI * radius * radius;
     }
 
-    public Circle(double radius) {
+    public Circle(int radius) {
         this.radius = radius;
     }
 
-    public Circle(String color, boolean filled, double radius) {
+    public Circle(Color color, boolean filled, int radius) {
         super(color, filled);
         this.radius = radius;
     }
 
-    public double getRadius() {
+    public int getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(int radius) {
         this.radius = radius;
     }
 

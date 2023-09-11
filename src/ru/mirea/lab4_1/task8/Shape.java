@@ -1,7 +1,11 @@
 package ru.mirea.lab4_1.task8;
 
+import ru.mirea.lab6.task10.Company;
+
+import java.awt.*;
+
 public abstract class Shape {
-    protected String color;
+    protected Color color;
     protected boolean filled;
 
     public boolean isFilled() {
@@ -12,18 +16,18 @@ public abstract class Shape {
         this.filled = filled;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
     public Shape() {
     }
 
-    public Shape(String color, boolean filled) {
+    public Shape(Color color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }

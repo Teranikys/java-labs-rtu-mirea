@@ -1,8 +1,10 @@
 package ru.mirea.lab4_1.task8;
 
+import java.awt.*;
+
 public class Rectangle extends Shape{
-    protected double width;
-    protected double length;
+    protected int width;
+    protected int length;
     @Override
     public double getArea() {
         return width * length;
@@ -21,29 +23,29 @@ public class Rectangle extends Shape{
     public Rectangle() {
     }
 
-    public Rectangle(String color, boolean filled, double width, double length) {
+    public Rectangle(Color color, boolean filled, int width, int length) {
         super(color, filled);
         this.width = width;
         this.length = length;
     }
 
-    public double getWidth() {
+    public int getWidth() {
         return width;
     }
 
-    public void setWidth(double width) {
+    public void setWidth(int width) {
         this.width = width;
     }
 
-    public double getLength() {
+    public int getLength() {
         return length;
     }
 
-    public void setLength(double length) {
+    public void setLength(int length) {
         this.length = length;
     }
 
-    public Rectangle(double width, double length) {
+    public Rectangle(int width, int length) {
         this.width = width;
         this.length = length;
     }
