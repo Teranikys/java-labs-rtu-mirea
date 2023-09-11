@@ -45,6 +45,8 @@ public class Matrix {
                     this.a[i][j] += b.a[i][j];
                 }
             }
+        } else {
+            throw new IllegalArgumentException("Матрицы разного размера");
         }
     }
 
