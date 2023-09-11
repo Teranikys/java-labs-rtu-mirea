@@ -9,6 +9,6 @@ public class Tester {
         Scanner sc = new Scanner(System.in);
         double celsius = sc.nextDouble();
         System.out.println("Fahrenheit: " + fr.convert(celsius));
-        System.out.println("Kelvin: " + kl.convert(celsius));
+        System.out.printf("Kelvin: %.3f", kl.convert(celsius));
     }
 }
