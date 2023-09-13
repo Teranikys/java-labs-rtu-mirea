@@ -1,10 +1,8 @@
 package ru.mirea.lab9.task2;
 
-import ru.mirea.lab9.task1.Student;
-
-public class Student2 extends Student {
+public class Student extends ru.mirea.lab9.task1.Student {
     private SortingStudentsByGPA sortingByGPA = new SortingStudentsByGPA();
-    public Student2(int id, int gpa) {
+    public Student(int id, int gpa) {
         super(id, gpa);
     }
 

@@ -1,9 +1,9 @@
 package ru.mirea.lab9.task3;
 
-import ru.mirea.lab9.task2.Student2;
+import ru.mirea.lab9.task2.Student;
 
 public class Task3 {
-    public static void mergeSort(Student2[] a, int l, int r) {
+    public static void mergeSort(Student[] a, int l, int r) {
         if (r == l) {
             return;
         }
@@ -13,7 +13,7 @@ public class Task3 {
 
         int i = l;
         int j = m + 1;
-        Student2[] temp = new Student2[a.length];
+        Student[] temp = new Student[a.length];
         for (int step = 0; step < r - l + 1; step++) {
             if ((j > r) || (i <= m && a[i].getSortingByGPA().compare(a[i], a[j]) < 1)) {
                 temp[step] = a[i++];
@@ -24,17 +24,17 @@ public class Task3 {
         System.arraycopy(temp, 0, a, l, r - l + 1);
     }
     public static void main(String[] args) {
-        Student2[] students = new Student2[6];
-        students[0] = new Student2(1, 5);
-        students[1] = new Student2(2, 3);
-        students[2] = new Student2(3, 3);
-        students[3] = new Student2(4, 4);
-        students[4] = new Student2(5, 3);
-        students[5] = new Student2(6, 2);
+        Student[] students = new Student[6];
+        students[0] = new Student(1, 5);
+        students[1] = new Student(2, 3);
+        students[2] = new Student(3, 3);
+        students[3] = new Student(4, 4);
+        students[4] = new Student(5, 3);
+        students[5] = new Student(6, 2);
 
         mergeSort(students, 0, students.length - 1);
 
-        for (Student2 student : students) {
+        for (Student student : students) {
             System.out.println(student);
         }
     }

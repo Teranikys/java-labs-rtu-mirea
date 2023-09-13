@@ -1,18 +1,11 @@
 package ru.mirea.lab9.task2;
 
-import ru.mirea.lab9.task1.Student;
-
-import java.util.Arrays;
-import java.util.Random;
-import java.util.function.Supplier;
-import java.util.stream.Stream;
-
 public class Task2 {
-    private static int separation(Student2[] a, int l, int r) {
-        Student2 separator = a[r];
+    private static int separation(Student[] a, int l, int r) {
+        Student separator = a[r];
         int i = l - 1;
 
-        Student2 temp;
+        Student temp;
         for (int j = l; j < r; j++) {
             if (a[j].getSortingByGPA().compare(a[j], separator) < 1) {
                 temp = a[++i];
@@ -25,7 +18,7 @@ public class Task2 {
         a[r] = temp;
         return i;
     }
-    public static void quickSort(Student2[] a, int l, int r) {
+    public static void quickSort(Student[] a, int l, int r) {
         if (l < r) {
             int separator = separation(a, l, r);
 
@@ -34,17 +27,17 @@ public class Task2 {
         }
     }
     public static void main(String[] args) {
-        Student2[] students = new Student2[6];
-        students[0] = new Student2(1, 5);
-        students[1] = new Student2(2, 4);
-        students[2] = new Student2(3, 3);
-        students[3] = new Student2(4, 4);
-        students[4] = new Student2(5, 3);
-        students[5] = new Student2(6, 3);
+        Student[] students = new Student[6];
+        students[0] = new Student(1, 5);
+        students[1] = new Student(2, 4);
+        students[2] = new Student(3, 3);
+        students[3] = new Student(4, 4);
+        students[4] = new Student(5, 3);
+        students[5] = new Student(6, 3);
 
         quickSort(students, 0, students.length - 1);
 
-        for (Student2 student : students) {
+        for (Student student : students) {
             System.out.println(student);
         }
     }
