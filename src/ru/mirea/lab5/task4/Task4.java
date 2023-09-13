@@ -15,7 +15,7 @@ public class Task4 {
             ImageIcon imageIcon = new ImageIcon("C:\\InteliJProjects\\MIREAProjects\\Lab1\\src\\ru\\mirea\\lab5\\task4\\resources\\" + (i + 1) + ".png");
             pic.setIcon(imageIcon);
             pic.repaint();
-            Thread.sleep(150);
+            Thread.sleep(160);
         }
     }
 }
