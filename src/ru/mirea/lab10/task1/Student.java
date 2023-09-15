@@ -72,6 +72,11 @@ public class Student implements Comparator<Student> {
     }
 
     @Override
+    public int compare(Student o1, Student o2) {
+        return Integer.compare(o2.getGpa(), o1.getGpa());
+    }
+
+    @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
@@ -81,10 +86,5 @@ public class Student implements Comparator<Student> {
                 ", group=" + group +
                 ", gpa=" + gpa +
                 '}';
-    }
-
-    @Override
-    public int compare(Student o1, Student o2) {
-        return Integer.compare(o2.getGpa(), o1.getGpa());
     }
 }
