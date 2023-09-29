@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Calendar calendar = new GregorianCalendar();
+        Calendar calendar = Calendar.getInstance();
         System.out.println("Enter year, month, day, hour and minutes to compare: ");
         Calendar calendar1 = new GregorianCalendar();
         calendar1.set(Calendar.YEAR, sc.nextInt());
@@ -16,7 +16,7 @@ public class Task2 {
         calendar1.set(Calendar.HOUR_OF_DAY, sc.nextInt());
         calendar1.set(Calendar.MINUTE, sc.nextInt());
 
-        switch (calendar.compareTo(calendar1)) {
+        switch (calendar.getTime().compareTo(calendar1.getTime())) {
             case 1 -> System.out.println("Введённая дата уже прошла");
             case 0 -> System.out.println("Даты равны");
             case -1 -> System.out.println("Введённая дата ещё наступит");

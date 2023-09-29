@@ -17,5 +17,6 @@ public class Task4 {
         calendar.set(Calendar.HOUR_OF_DAY, sc.nextInt());
         calendar.set(Calendar.MINUTE, sc.nextInt());
         Date date = new Date(calendar.getTimeInMillis());
+        System.out.println(date);
     }
 }
