@@ -53,16 +53,13 @@ public class Task2 extends JFrame {
         menuBar.add(fontMenu);
 
         blueItem.addActionListener(e -> textArea.setForeground(Color.BLUE));
-
         redItem.addActionListener(e -> textArea.setForeground(Color.RED));
-
         blackItem.addActionListener(e -> textArea.setForeground(Color.BLACK));
 
         timesNewRomanItem.addActionListener(e -> textArea.setFont(new Font("Times New Roman", Font.PLAIN, 14)));
-
         msSansSerifItem.addActionListener(e -> textArea.setFont(new Font("MS Sans Serif", Font.PLAIN, 14)));
-
         courierNewItem.addActionListener(e -> textArea.setFont(new Font("Courier New", Font.PLAIN, 14)));
+
         blackItem.setSelected(true);
         timesNewRomanItem.setSelected(true);
 
